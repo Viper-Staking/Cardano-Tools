@@ -27,8 +27,7 @@ before_script:
   - python --version  # For debugging
   - pip install poetry
   - poetry install
-  - poetry shell
 
 test:
   script:
-    - pytest tests
+    - poetry run pytest tests
